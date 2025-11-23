@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VS Code + Codex Hello</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      padding: 2rem 3rem;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1.2rem;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello, Codex</h1>
+    <p id="msg">This is our GitHub + VS Code Online test.</p>
+    <button id="btn">Click me</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const msg = document.getElementById('msg');
+
+    btn.addEventListener('click', () => {
+      msg.textContent = 'Codex will be editing this soon…';
+    });
+  </script>
+</body>
+</html>
